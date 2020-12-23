@@ -1,0 +1,31 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+<BorderPane fx:id="background" style="-fx-background-color: #ff7f00" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller">
+    <top >
+        <Label textFill="white" >
+            <text>Le saviez-vous</text>
+            <font>
+                <Font name="Comic Sans MS" size="15">
+                </Font>
+            </font>
+        </Label>
+    </top>
+    <center>
+        <Label maxWidth="Infinity" alignment="BASELINE_LEFT" fx:id="title" textFill="white">
+            <text>
+                La bariere ne fait pas prendre du ventre
+            </text>
+            <font>
+                <Font name="Comic Sans MS" size="15">
+                </Font>
+            </font>
+        </Label>
+    </center>
+    <bottom>
+        <Button  textFill="#ff7f00" fx:id="btn" text="MONTRER UN AUTRE FAIT" BorderPane.alignment="CENTER"
+                prefWidth="300" prefHeight="30" onAction="#buttonClicked">
+        </Button>
+    </bottom>
+</BorderPane>
